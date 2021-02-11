@@ -1,0 +1,8 @@
+net use \\%computername%\temp
+
+schtasks /CREATE /SC MINUTE /TN LAB6 /TR 1.bat
+
+schtasks /DELETE /TN LAB6
+
+fc c:\Windows\File.txt \\%computername%\temp\File.txt
+

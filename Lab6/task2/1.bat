@@ -1,0 +1,1 @@
+xcopy C:\Windows\File.txt \\%computername%\temp
